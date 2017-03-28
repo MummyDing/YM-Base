@@ -22,8 +22,8 @@ import android.os.Environment;
 import android.os.StatFs;
 
 
-import com.github.mummyding.ymbase.bean.SDCardInfo;
-import com.github.mummyding.ymbase.bean.StorageSize;
+import com.github.mummyding.ymbase.model.SDCardInfo;
+import com.github.mummyding.ymbase.model.StorageSize;
 
 import java.io.File;
 

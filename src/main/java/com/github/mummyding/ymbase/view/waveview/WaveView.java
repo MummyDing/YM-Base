@@ -1,4 +1,4 @@
-package com.github.mummyding.ymbase.waveview;
+package com.github.mummyding.ymbase.view.waveview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

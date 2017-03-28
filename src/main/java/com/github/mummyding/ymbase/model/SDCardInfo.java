@@ -13,18 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.mummyding.ymbase.bean;
+package com.github.mummyding.ymbase.model;
 
 // TODO: Auto-generated Javadoc
 
 /**
 
  */
-public class StorageSize {
+public class SDCardInfo {
+    public long total;
 
-
-    public float value;
-
-    public String suffix;
-
+    public long free;
 }

@@ -1,5 +1,5 @@
 
-package com.github.mummyding.ymbase.swipeback;
+package com.github.mummyding.ymbase.widget.swipeback;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;

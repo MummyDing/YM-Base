@@ -1,16 +1,23 @@
-
-package com.github.mummyding.ymbase.swipeback;
+package com.github.mummyding.ymbase.base;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.view.View;
 
-public class SwipeBackPreferenceActivity extends PreferenceActivity implements SwipeBackActivityBase {
+
+import com.github.mummyding.ymbase.base.BaseActivity;
+import com.github.mummyding.ymbase.widget.swipeback.SwipeBackActivityBase;
+import com.github.mummyding.ymbase.widget.swipeback.SwipeBackActivityHelper;
+import com.github.mummyding.ymbase.widget.swipeback.SwipeBackLayout;
+import com.github.mummyding.ymbase.widget.swipeback.Utils;
+
+public abstract class BaseSwipeBackActivity extends BaseActivity implements SwipeBackActivityBase {
+
     private SwipeBackActivityHelper mHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         mHelper = new SwipeBackActivityHelper(this);
         mHelper.onActivityCreate();
     }
@@ -28,11 +35,12 @@ public class SwipeBackPreferenceActivity extends PreferenceActivity implements S
             return mHelper.findViewById(id);
         return v;
     }
-    
+
     @Override
     public SwipeBackLayout getSwipeBackLayout() {
         return mHelper.getSwipeBackLayout();
     }
+
     @Override
     public void setSwipeBackEnable(boolean enable) {
         getSwipeBackLayout().setEnableGesture(enable);
@@ -40,6 +48,7 @@ public class SwipeBackPreferenceActivity extends PreferenceActivity implements S
 
     @Override
     public void scrollToFinishActivity() {
+        Utils.convertActivityToTranslucent(this);
         getSwipeBackLayout().scrollToFinishActivity();
     }
 }

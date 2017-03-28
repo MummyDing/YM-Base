@@ -1,4 +1,4 @@
-package com.github.mummyding.ymbase.swipeback;
+package com.github.mummyding.ymbase.widget.swipeback;
 
 /**
  * @author Yrom

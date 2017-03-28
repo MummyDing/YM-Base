@@ -1,4 +1,4 @@
-package com.github.mummyding.ymbase;
+package com.github.mummyding.ymbase.base;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

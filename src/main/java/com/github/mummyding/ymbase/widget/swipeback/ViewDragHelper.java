@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.mummyding.ymbase.swipeback;
+package com.github.mummyding.ymbase.widget.swipeback;
 
 import android.content.Context;
 import android.support.v4.view.MotionEventCompat;

@@ -35,8 +35,8 @@ import android.util.DisplayMetrics;
 import android.view.inputmethod.InputMethodManager;
 
 
-import com.github.mummyding.ymbase.bean.AppProcessInfo;
-import com.github.mummyding.ymbase.bean.ProcessInfo;
+import com.github.mummyding.ymbase.model.AppProcessInfo;
+import com.github.mummyding.ymbase.model.ProcessInfo;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

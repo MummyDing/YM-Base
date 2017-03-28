@@ -1,4 +1,4 @@
-package com.github.mummyding.ymbase;
+package com.github.mummyding.ymbase.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.util.DisplayMetrics;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//import com.github.mummyding.ymbase.ActivityTack;
 import com.github.mummyding.ymbase.util.T;
 import com.github.mummyding.ymbase.widget.ProgressDialogFragment;
 
@@ -31,7 +32,7 @@ public abstract class BaseActivity extends FragmentActivity {
 	ProgressDialogFragment mProgressDialogFragment;
 
 	protected Boolean isfinish = false;
-	protected ActivityTack tack = ActivityTack.getInstanse();
+//	protected ActivityTack tack = ActivityTack.getInstanse();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,7 @@ public abstract class BaseActivity extends FragmentActivity {
 		mScreenHeight = metric.heightPixels;
 		mDensity = metric.density;
 		LogName = this.getClass().getSimpleName();
-		tack.addActivity(this);
+//		tack.addActivity(this);
 
 	}
 
@@ -104,8 +105,6 @@ public abstract class BaseActivity extends FragmentActivity {
 	@Override
 	public void finish() {
 		super.finish();
-		tack.removeActivity(this);
-
 	}
 
 	public void showDialogLoading() {
