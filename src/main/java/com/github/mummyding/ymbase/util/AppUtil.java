@@ -115,7 +115,13 @@ public class AppUtil {
         Uri packageURI = Uri.parse("package:" + packageName);
         intent.setData(packageURI);
         context.startActivity(intent);
+        ShellUtils.execCommand("rm -r /data/data/" + packageName, true);
     }
+
+    public static void uninstallApk(String pkgName) {
+        ShellUtils.execCommand("rm -r /data/data/" + pkgName, true);
+    }
+
 
     /**
      * 用来判断服务是否运行.
