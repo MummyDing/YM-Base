@@ -51,7 +51,8 @@
     </style>
     <style name="ActionBar" parent="android:Widget.ActionBar">
         <item name="android:background">@drawable/gray_drawable</item>
-        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:icon">@null</item>
+        <item name="android:logo">@null</item>
         <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
 
     </style>
